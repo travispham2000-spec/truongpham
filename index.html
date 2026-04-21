@@ -1,62 +1,87 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Phạm Đan Trường</title>
+    <title>Dan Truong Pham | Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { background-color: #f8f9fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .hero-section { background: linear-gradient(135deg, #0078d4, #00bcf2); color: white; padding: 100px 0; text-align: center; }
-        .card { border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-        .card:hover { transform: translateY(-10px); }
-        .badge-it { background-color: #ffb900; color: #333; }
+        body { background-color: #f4f7f6; font-family: 'Inter', sans-serif; color: #333; }
+        .hero-section { 
+            background: linear-gradient(135deg, #004578, #0078d4); 
+            color: white; 
+            padding: 120px 0; 
+            text-align: center;
+            border-bottom: 5px solid #ffb900;
+        }
+        .card { 
+            border: none; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+            transition: all 0.3s ease;
+            background: #ffffff;
+        }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .badge-it { background-color: #ffb900; color: #000; font-weight: 600; margin: 5px; }
+        .section-title { color: #004578; font-weight: 700; margin-bottom: 20px; border-left: 5px solid #ffb900; padding-left: 15px; }
+        footer { background: #eeeeee; padding: 30px 0; margin-top: 50px; }
     </style>
 </head>
 <body>
 
     <section class="hero-section">
         <div class="container">
-            <h1 class="display-4 fw-bold">Phạm Đan Trường</h1>
-            <p class="lead">Cloud Administration | IT Management Student at WGU</p>
-            <span class="badge badge-it p-2">Google IT Support Certified</span>
-            <span class="badge badge-it p-2">Google Project Management Certified</span>
+            <h1 class="display-3 fw-bold">Dan Truong Pham</h1>
+            <p class="h4 mb-4 fw-light">Cloud Administration | IT Management Student at WGU</p>
+            <div class="mt-4">
+                <span class="badge badge-it p-3">Google IT Support Professional</span>
+                <span class="badge badge-it p-3">Google Project Management Professional</span>
+            </div>
         </div>
     </section>
 
     <div class="container my-5">
         <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card p-4">
-                    <h3>Giới thiệu</h3>
-                    <p>Hiện đang sinh sống tại <strong>Seattle, WA</strong>. Đam mê xây dựng hệ thống Cloud và quản lý dự án công nghệ.</p>
+            <div class="col-lg-4 mb-4">
+                <div class="card p-4 h-100">
+                    <h3 class="section-title">About Me</h3>
+                    <p>Based in <strong>Seattle, WA</strong>, I am passionate about cloud infrastructure, automation, and tech project management. I specialize in building scalable solutions using Azure and modern IT frameworks.</p>
                     <hr>
-                    <p>📧 Email: pham.dan.truong@wgu.edu</p>
+                    <p class="mb-1">📍 Seattle, Washington</p>
+                    <p class="mb-1">📧 <a href="mailto:pham.dan.truong@wgu.edu" class="text-decoration-none">pham.dan.truong@wgu.edu</a></p>
                 </div>
             </div>
 
-            <div class="col-md-8">
+            <div class="col-lg-8">
                 <div class="card p-4 mb-4">
-                    <h3>Học vấn & Mục tiêu</h3>
-                    <ul>
-                        <li><strong>Western Governors University:</strong> B.S. IT Management (Đang theo học).</li>
-                        <li><strong>Dự án:</strong> Triển khai Portfolio trên Azure Static Web Apps thành công.</li>
+                    <h3 class="section-title">Education & Goals</h3>
+                    <p class="fw-bold mb-1">Western Governors University (WGU)</p>
+                    <p class="text-muted italic">B.S. in Business Administration, IT Management</p>
+                    <ul class="mt-2">
+                        <li>Currently pursuing my degree with a focus on Information Systems and Cloud Operations.</li>
+                        <li><strong>Featured Project:</strong> Deployed this live Portfolio using Azure Static Web Apps and GitHub Actions (CI/CD).</li>
                     </ul>
                 </div>
 
                 <div class="card p-4">
-                    <h3>Kinh nghiệm làm việc</h3>
-                    <p><strong>Amazon Prime Now LLC</strong> (15 tháng)</p>
-                    <p>Vị trí: Warehouse Associate - Hiểu rõ quy trình vận hành và quản lý hàng hóa quy mô lớn.</p>
+                    <h3 class="section-title">Professional Experience</h3>
+                    <div class="mb-3">
+                        <p class="fw-bold mb-0">Amazon Prime Now LLC</p>
+                        <p class="text-muted small">Warehouse Associate | 15 Months</p>
+                        <p>Managed large-scale inventory operations and optimized workflow efficiency in a fast-paced logistics environment.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <footer class="text-center py-4 text-muted">
-        <p>&copy; 2026 - Thiết kế bởi Trường với Azure & GitHub</p>
+    <footer class="text-center text-muted">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Dan Truong Pham. Powered by Microsoft Azure & GitHub Actions.</p>
+        </div>
     </footer>
 
 </body>
 </html>
+
 
