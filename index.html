@@ -25,6 +25,8 @@
         .badge-it { background-color: #ffb900; color: #000; font-weight: 600; margin: 5px; }
         .section-title { color: #004578; font-weight: 700; margin-bottom: 20px; border-left: 5px solid #ffb900; padding-left: 15px; }
         footer { background: #eeeeee; padding: 30px 0; margin-top: 50px; }
+        .arch-card { background: white; padding: 15px; border-radius: 15px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05); height: 100%; }
+        .arch-img { width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px; }
     </style>
 </head>
 <body>
@@ -74,38 +76,48 @@
                     <p class="fw-bold mb-1">Western Governors University (WGU)</p>
                     <p class="text-muted italic">B.S. in Business Administration, IT Management</p>
                     <ul class="mt-2">
-                        <li>Currently pursuing my degree with a focus on Information Systems and Cloud Operations.</li>
-                        <li><strong>Featured Project:</strong> Deployed this live Portfolio using Azure Static Web Apps and GitHub Actions (CI/CD).</li>
+                        <li>Focusing on Information Systems and Cloud Operations for enterprise-level scalability.</li>
+                        <li><strong>Live Project:</strong> This portfolio is hosted on Azure Static Web Apps with an automated CI/CD pipeline via GitHub Actions.</li>
                     </ul>
                 </div>
 
-                <section style="padding: 30px; margin: 20px 0; background-color: #f8f9fa; border-radius: 15px; border: 1px solid #e1e4e8;">
-                    <h3 class="section-title" style="color: #0056b3; margin-bottom: 15px;">System Architecture</h3>
-                    <p style="color: #555; margin-bottom: 20px;">
-                        This diagram illustrates the automated CI/CD pipeline and cloud infrastructure used to deploy this portfolio website.
-                    </p>
+                <div class="card p-4 mb-4">
+                    <h3 class="section-title">System Architecture</h3>
+                    <p class="text-muted mb-4">Detailed view of the CI/CD pipeline and the underlying Azure cloud infrastructure.</p>
                     
-                    <div style="text-align: center; background: white; padding: 15px; border-radius: 10px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);">
-                        <img src="architecture.azure.png" alt="Azure Architecture Diagram" style="width: 100%; max-width: 900px; height: auto;">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="arch-card text-center">
+                                <h6 class="fw-bold mb-3">1. CI/CD Workflow</h6>
+                                <img src="architecture.png" alt="General CI/CD Workflow" class="arch-img">
+                                <p class="small text-muted">GitHub source control and automated build processes.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <div class="arch-card text-center">
+                                <h6 class="fw-bold mb-3">2. Azure Infrastructure</h6>
+                                <img src="architecture.azure.png" alt="Azure Cloud Architecture" class="arch-img">
+                                <p class="small text-muted">Content delivery via Azure Static Web Apps and Global CDN.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <ul style="margin-top: 20px; color: #444; font-size: 0.95em;">
-                        <li><strong>CI/CD Pipeline:</strong> Automated build and deployment from GitHub triggered by source code changes.</li>
-                        <li><strong>Global Distribution:</strong> Hosted on Azure Static Web Apps for high-speed content delivery via global CDN edge locations.</li>
-                        <li><strong>Security:</strong> Integrated HTTPS (SSL/TLS) certificate management to ensure encrypted data transmission.</li>
-                    </ul>
-
-                    <p style="text-align: center; margin-top: 15px; font-size: 0.85em; color: #777;">
-                        Tech Stack: GitHub Actions | Azure Static Web Apps | HTML5/Bootstrap
-                    </p>
-                </section>
+                    <div class="mt-2">
+                        <ul class="small text-muted">
+                            <li><strong>Automation:</strong> Seamless deployment using YAML-based GitHub Actions.</li>
+                            <li><strong>Scalability:</strong> Serverless hosting that scales automatically based on traffic.</li>
+                            <li><strong>Security:</strong> Enforced HTTPS protocols for secure, encrypted user sessions.</li>
+                        </ul>
+                    </div>
+                </div>
 
                 <div class="card p-4">
                     <h3 class="section-title">Professional Experience</h3>
                     <div class="mb-3">
                         <p class="fw-bold mb-0">Amazon Prime Now LLC</p>
                         <p class="text-muted small">Warehouse Associate | 1 Year 6 Months</p>
-                        <p>Managed large-scale inventory operations and optimized workflow efficiency in a fast-paced logistics environment in Seattle.</p>
+                        <p>Optimized logistics and inventory workflows in a high-demand, 24/7 fulfillment environment.</p>
                     </div>
                 </div>
             </div>
