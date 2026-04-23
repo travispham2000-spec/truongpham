@@ -30,17 +30,16 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#" style="letter-spacing: 2px;">My Portfolio</a>
-        
+        <a class="navbar-brand fw-bold" href="#" style="letter-spacing: 2px;">MY PORTFOLIO</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-uppercase small fw-bold">
                 <li class="nav-item px-3"><a class="nav-link text-dark" href="#">Home</a></li>
                 <li class="nav-item px-3"><a class="nav-link text-dark" href="#about">About</a></li>
-                <li class="nav-item px-3"><a class="nav-link text-dark" href="#projects">Projects</a></li> <li class="nav-item px-3"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+                <li class="nav-item px-3"><a class="nav-link text-dark" href="#projects">Projects</a></li> 
+                <li class="nav-item px-3"><a class="nav-link text-dark" href="#contact">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -79,27 +78,34 @@
                         <li><strong>Featured Project:</strong> Deployed this live Portfolio using Azure Static Web Apps and GitHub Actions (CI/CD).</li>
                     </ul>
                 </div>
-<section style="padding: 30px; margin: 20px 0; background-color: #f8f9fa; border-radius: 15px; border: 1px solid #e1e4e8;">
-    <h3 class="section-title" style="color: #0056b3; margin-bottom: 15px;">System Architecture</h3>
-    <p style="color: #555; margin-bottom: 20px;">
-        This diagram illustrates the automated CI/CD pipeline and cloud infrastructure used to deploy this portfolio website.
-    </p>
-    
-    <div style="text-align: center; background: white; padding: 15px; border-radius: 10px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);">
-        <img src="architecture.png" alt="Portfolio Architecture" style="width: 100%; max-width: 900px; height: auto;">
-    </div>
 
-    <p style="text-align: center; margin-top: 15px; font-size: 0.85em; color: #777;">
-        Tech Stack: GitHub Actions & Azure Static Web Apps
-    </p>
-</section>
+                <section style="padding: 30px; margin: 20px 0; background-color: #f8f9fa; border-radius: 15px; border: 1px solid #e1e4e8;">
+                    <h3 class="section-title" style="color: #0056b3; margin-bottom: 15px;">System Architecture</h3>
+                    <p style="color: #555; margin-bottom: 20px;">
+                        This diagram illustrates the automated CI/CD pipeline and cloud infrastructure used to deploy this portfolio website.
+                    </p>
+                    
+                    <div style="text-align: center; background: white; padding: 15px; border-radius: 10px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05);">
+                        <img src="architecture.azure.png" alt="Azure Architecture Diagram" style="width: 100%; max-width: 900px; height: auto;">
+                    </div>
+
+                    <ul style="margin-top: 20px; color: #444; font-size: 0.95em;">
+                        <li><strong>CI/CD Pipeline:</strong> Automated build and deployment from GitHub triggered by source code changes.</li>
+                        <li><strong>Global Distribution:</strong> Hosted on Azure Static Web Apps for high-speed content delivery via global CDN edge locations.</li>
+                        <li><strong>Security:</strong> Integrated HTTPS (SSL/TLS) certificate management to ensure encrypted data transmission.</li>
+                    </ul>
+
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.85em; color: #777;">
+                        Tech Stack: GitHub Actions | Azure Static Web Apps | HTML5/Bootstrap
+                    </p>
+                </section>
 
                 <div class="card p-4">
                     <h3 class="section-title">Professional Experience</h3>
                     <div class="mb-3">
                         <p class="fw-bold mb-0">Amazon Prime Now LLC</p>
-                        <p class="text-muted small">Warehouse Associate | 15 Months</p>
-                        <p>Managed large-scale inventory operations and optimized workflow efficiency in a fast-paced logistics environment.</p>
+                        <p class="text-muted small">Warehouse Associate | 1 Year 6 Months</p>
+                        <p>Managed large-scale inventory operations and optimized workflow efficiency in a fast-paced logistics environment in Seattle.</p>
                     </div>
                 </div>
             </div>
@@ -112,6 +118,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
