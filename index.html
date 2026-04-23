@@ -21,18 +21,17 @@
             transition: all 0.3s ease;
             background: #ffffff;
         }
-        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
         .badge-it { background-color: #ffb900; color: #000; font-weight: 600; margin: 5px; }
         .section-title { color: #004578; font-weight: 700; margin-bottom: 20px; border-left: 5px solid #ffb900; padding-left: 15px; }
+        .story-badge { font-size: 0.75rem; text-uppercase; letter-spacing: 1px; color: #0078d4; font-weight: bold; }
         footer { background: #eeeeee; padding: 30px 0; margin-top: 50px; }
-        .arch-card { background: white; padding: 15px; border-radius: 15px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05); height: 100%; }
-        .arch-img { width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px; }
     </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3 shadow-sm">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#" style="letter-spacing: 2px;">MY PORTFOLIO</a>
+        <a class="navbar-brand fw-bold" href="#" style="letter-spacing: 2px;">DAN TRUONG PHAM</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,10 +62,10 @@
             <div class="col-lg-4 mb-4">
                 <div class="card p-4 h-100">
                     <h3 class="section-title">About Me</h3>
-                    <p>Based in <strong>Seattle, WA</strong>, I am passionate about cloud infrastructure, automation, and tech project management. I specialize in building scalable solutions using Azure and modern IT frameworks.</p>
+                    <p>Based in <strong>Seattle, WA</strong>, I specialize in cloud infrastructure, automation, and tech management. I build scalable solutions using Azure and modern DevOps frameworks.</p>
                     <hr>
                     <p class="mb-1">📍 Seattle, Washington</p>
-                    <p class="mb-1">📧 <a href="mailto:pham.dan.truong@wgu.edu" class="text-decoration-none">pham.dan.truong@wgu.edu</a></p>
+                    <p class="mb-1">📧 <a href="mailto:ptruon17@wgu.edu" class="text-decoration-none">ptruon17@wgu.edu</a></p>
                 </div>
             </div>
 
@@ -76,40 +75,29 @@
                     <p class="fw-bold mb-1">Western Governors University (WGU)</p>
                     <p class="text-muted italic">B.S. in Business Administration, IT Management</p>
                     <ul class="mt-2">
-                        <li>Focusing on Information Systems and Cloud Operations for enterprise-level scalability.</li>
-                        <li><strong>Live Project:</strong> This portfolio is hosted on Azure Static Web Apps with an automated CI/CD pipeline via GitHub Actions.</li>
+                        <li>Focusing on Cloud Operations and Enterprise Information Systems.</li>
+                        <li><strong>Key Achievement:</strong> Built this automated portfolio environment to demonstrate cloud mastery.</li>
                     </ul>
                 </div>
 
                 <div class="card p-4 mb-4">
-                    <h3 class="section-title">System Architecture</h3>
-                    <p class="text-muted mb-4">Detailed view of the CI/CD pipeline and the underlying Azure cloud infrastructure.</p>
-                    
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <div class="arch-card text-center">
-                                <h6 class="fw-bold mb-3">1. CI/CD Workflow</h6>
-                                <img src="architecture.png" alt="General CI/CD Workflow" class="arch-img">
-                                <p class="small text-muted">GitHub source control and automated build processes.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 mb-4">
-                            <div class="arch-card text-center">
-                                <h6 class="fw-bold mb-3">2. Azure Infrastructure</h6>
-                                <img src="architecture.azure.png" alt="Azure Cloud Architecture" class="arch-img">
-                                <p class="small text-muted">Content delivery via Azure Static Web Apps and Global CDN.</p>
-                            </div>
-                        </div>
+                    <span class="story-badge">Story #1: The DevOps Pipeline</span>
+                    <h3 class="section-title">Software Delivery Lifecycle</h3>
+                    <p class="text-muted small">How I automate code from my local machine to the live web.</p>
+                    <div class="text-center my-3 p-3 bg-light rounded-3">
+                        <img src="architecture.png" alt="CI/CD Workflow" class="img-fluid rounded border shadow-sm">
                     </div>
+                    <p class="small">Every change I make is managed via <strong>GitHub</strong>. Once I push code, <strong>GitHub Actions</strong> triggers an automated build process, ensuring that the site is tested and deployed without any manual intervention. This represents the "Modern Operations" approach to IT.</p>
+                </div>
 
-                    <div class="mt-2">
-                        <ul class="small text-muted">
-                            <li><strong>Automation:</strong> Seamless deployment using YAML-based GitHub Actions.</li>
-                            <li><strong>Scalability:</strong> Serverless hosting that scales automatically based on traffic.</li>
-                            <li><strong>Security:</strong> Enforced HTTPS protocols for secure, encrypted user sessions.</li>
-                        </ul>
+                <div class="card p-4 mb-4">
+                    <span class="story-badge">Story #2: Cloud Infrastructure</span>
+                    <h3 class="section-title">Azure Cloud Architecture</h3>
+                    <p class="text-muted small">The engine powering this website's performance and security.</p>
+                    <div class="text-center my-3 p-3 bg-light rounded-3">
+                        <img src="architecture.azure.png" alt="Azure Cloud" class="img-fluid rounded border shadow-sm">
                     </div>
+                    <p class="small">By utilizing <strong>Azure Static Web Apps</strong>, this portfolio benefits from global scalability via <strong>CDN edge locations</strong>. Security is built-in with automatic <strong>SSL/TLS certificates</strong>, providing a high-availability, enterprise-grade experience for every visitor.</p>
                 </div>
 
                 <div class="card p-4">
@@ -117,7 +105,7 @@
                     <div class="mb-3">
                         <p class="fw-bold mb-0">Amazon Prime Now LLC</p>
                         <p class="text-muted small">Warehouse Associate | 1 Year 6 Months</p>
-                        <p>Optimized logistics and inventory workflows in a high-demand, 24/7 fulfillment environment.</p>
+                        <p>Optimized logistics and inventory workflows in a high-demand, 24/7 fulfillment environment in Seattle.</p>
                     </div>
                 </div>
             </div>
@@ -126,12 +114,11 @@
 
     <footer class="text-center text-muted">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Dan Truong Pham. Powered by Microsoft Azure & GitHub Actions.</p>
+            <p class="mb-0">&copy; 2026 Dan Truong Pham. Built with Azure & GitHub.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
 
